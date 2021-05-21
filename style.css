@@ -1,0 +1,158 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff
+}
+
+.container {
+    background-image: url("images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: center;
+    width: 1345px;
+    height: 100vh;
+    margin: auto;
+}
+
+h1.heading {
+    margin: 0px 138px;
+    font-size: 47px;
+    line-height: 1.1;
+}
+
+p.details {
+    margin: 31px 44px 0px 138px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.offer {
+    padding: 20px;
+    height: 62px;
+    width: 519px;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0px 7px 3px #7d747494;
+}
+
+span#validity {
+    color: white;
+    opacity: 0.8;
+}
+
+.form {
+    width: 519px;
+    max-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin-top: 22px;
+    border-radius: 8px;
+    box-shadow: 0px 7px 3px #7d747494;
+    text-align: center;
+    color: black;
+}
+
+input {
+    width: 446px;
+    height: 56px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border-color: hsl(246, 25%, 77%);
+    outline: none;
+    border-width: 3px;
+    padding-left: 22px;
+    font-size: 20px;
+}
+
+.validity {
+    text-align: right;
+    color: hsl(0, 100%, 74%);
+    padding-top: 5px;
+    font-size: 14px;
+    display: none;
+    padding-right: 40px;
+}
+
+.input-active {
+    border: 3px solid hsl(0, 100%, 74%)
+}
+
+input[type="button"] {
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+
+::placeholder {
+    opacity: 0.8;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 22px;
+    color: hsl(249, 10%, 26%);
+    font-weight: 600;
+}
+
+p#conditions {
+    font-size: 10px;
+    margin: 7px;
+    color: hsl(246, 25%, 77%)
+}
+
+span {
+    color: hsl(0, 100%, 74%);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: auto;
+        height: 890px;
+        width: 411px;
+    }
+    h1.heading {
+        font-size: 27px;
+        line-height: 1.1;
+        max-width: 400px;
+        margin: auto;
+        padding: 28px;
+    }
+    p.details {
+        margin: 0px 70px 57px 70px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .offer {
+        padding: 20px 68px 7px 61px;
+        height: 95px;
+        width: 374px;
+        margin: auto;
+        font-size: 18px;
+    }
+    .form {
+        width: 374px;
+    }
+    input {
+        width: 336px;
+    }
+    p#conditions {
+        font-size: 14px;
+    }
+}
